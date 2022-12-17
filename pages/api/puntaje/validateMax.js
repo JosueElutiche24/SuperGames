@@ -18,7 +18,7 @@ class endPoint{
     static async post(thisReq){ 
         // obtenemos los datos que necesitamos para validar
         const {myTokenName} = thisReq.cookies
-        const {exp, idUser, nameUser, email, password} =verify(myTokenName, "secret")
+        const {exp, idUser, nameUser, email, password} =verify(myTokenName,process.env.SECRET)
         const {puntuacion, mode, level} = thisReq.body;
         const date = Date.now();
         // si el usuario es un invitado no hagas nada

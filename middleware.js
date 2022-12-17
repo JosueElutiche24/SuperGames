@@ -12,7 +12,7 @@ export async function middleware(request){
         if(request.nextUrl.pathname.includes("/login")){
             if(myToken !== undefined){
                 try {
-                    const { payload } = await jwtVerify(myToken, new TextEncoder().encode("secret"));
+                    const { payload } = await jwtVerify(myToken, new TextEncoder().encode(process.env.SECRET));
                     return NextResponse.redirect(new URL("/", request.url))
                 } catch (error) {
                     return NextResponse.next()
@@ -29,7 +29,7 @@ export async function middleware(request){
         }
         // intentamos validar wque el token es nuestro, y si no, lo redireccionamos al login
         try {
-            const { payload } = await jwtVerify(myToken, new TextEncoder().encode("secret"));
+            const { payload } = await jwtVerify(myToken, new TextEncoder().encode(process.env.SECRET));
             return NextResponse.next()
         } catch (error) {
             return NextResponse.redirect(new URL("/login", request.url))

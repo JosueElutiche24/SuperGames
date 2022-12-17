@@ -59,7 +59,7 @@ class endPoint{
             if(!myTokenName){
                 return false
             }
-            verify(myTokenName, "secret")
+            verify(myTokenName, process.env.SECRET)
             return true;
         } catch (error) {
             return false;

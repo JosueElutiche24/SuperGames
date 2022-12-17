@@ -7,6 +7,13 @@ export default function Menu() {
         setHandleTab(num)
     }
 
+    return (
+        <div className='w-3/4 h-5/6 flex flex-col bg-gray-300'>
+            <div className='w-full h-1/2'>
+                <h3 className='font-bold text-4xl text-center text-neutral-600 my-3'>Esta seccion aun esta siendo desarrollada</h3>
+            </div>
+        </div>
+      )
   return (
     <div className='w-3/4 h-5/6 flex flex-col bg-gray-300'>
         <div className='w-full h-1/2'>

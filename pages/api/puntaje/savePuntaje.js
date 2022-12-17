@@ -18,7 +18,7 @@ class endPoint{
     static async post(thisReq){ 
         // obtenemos los datos que necesitamos para validar
         const {myTokenName} = thisReq.cookies
-        const {exp, idUser, nameUser, email, password} =verify(myTokenName, "secret")
+        const {exp, idUser, nameUser, email, password} =verify(myTokenName,process.env.SECRET)
         const {puntuacion, mode, level} = thisReq.body;
         const date = Date.now();
         // guardar valor de punteo

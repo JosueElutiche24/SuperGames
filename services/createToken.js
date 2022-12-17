@@ -12,7 +12,7 @@ export default async function createToken(type, values = null){
             nameUser: values.nameUser,
             email : values.email,
             password: values.password
-        }, "secret")
+        }, process.env.SECRET)
 
         // res.setHeader("Set-Cookie", token)
         // necesitaremos otra biblioteca para enviar nuestro token serializado, ya que es una mala pracrica enviarlo solo asi
@@ -30,7 +30,7 @@ export default async function createToken(type, values = null){
             exp: Math.floor(Date.now()/1000)+(60*60*24*1),
             idUser : "0",
             nameUser: "guest",
-        }, "secret")
+        }, process.env.SECRET)
 
         myToken = serialize("myTokenName", token, {
             httpOnly: true,
