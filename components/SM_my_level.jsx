@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Card from './SM_card'
 import Modal from './SM_modal';
-import { maxPuntaje } from '../servicesClient/conectWhitApi';
+import { maxPuntaje } from './conectWhitApi';
 import { useRouter } from 'next/router';
 
 export default function MyLevel({Level, selectLevel, arrayMap}) {

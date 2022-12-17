@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-import { searchOneUser, searchAllUsers, postUser, authUser, guests } from '../servicesClient/conectWhitApi'
+import { searchOneUser, searchAllUsers, postUser, authUser, guests } from './conectWhitApi'
 import { ContextofUser } from '../context/user_context'
 import Modal from './LO_modal'
 
