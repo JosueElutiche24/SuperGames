@@ -1,0 +1,32 @@
+{
+  "name": "minijuegos-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.2.0",
+    "cookie": "^0.5.0",
+    "crossenv": "^0.0.2-security",
+    "dotenv": "^16.0.3",
+    "jose": "^4.11.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-particles": "^2.5.3",
+    "tsparticles": "^2.5.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  }
+}

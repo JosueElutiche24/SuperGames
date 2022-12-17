@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .margins{
+        @apply outline outline-white outline-1
+    }
+    .centrado{
+        @apply flex justify-center items-center
+    }
+    .modalWidht{
+        width: 50vw;
+    }
+    
+    /* Estilos para colorear */
+    
+    .blackTrans{
+        @apply text-lg;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    .BoxOpaque{
+        @apply outline outline-2 outline-white;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    .BoxViolet{
+        @apply outline outline-2 outline-white;
+        background-color: rgba(198, 45, 245, .8);
+        transition: 0.6s;
+    }
+    .BoxPink{
+        @apply outline outline-2 outline-white;
+        background-color: rgba(232, 90, 232, .8);
+        transition: 0.6s;
+    }
+    .BoxRed{
+        @apply outline outline-2 outline-white;
+        background-color: rgba(227, 40, 40, 0.8);
+        transition: 0.6s;
+    }
+    .BoxYellow{
+        @apply outline outline-2 outline-white;
+        background-color: rgba(246, 230, 3, 0.933);
+        transition: 0.6s;
+    }
+    .BoxGreen{
+        @apply outline outline-2 outline-white;
+        background-color: rgba(92, 246, 3, 0.933);
+        transition: 0.6s;
+    }
+
+    /* Estilos de las cards de memoria */
+    .card1{
+        width: calc(100%/5);
+        height: 40%;
+    }
+    .card2{
+        width: calc(100%/7);
+        height: 30%;
+    }
+    .card3{
+        width: calc(100%/7);
+        height: 23%;
+    }
+    /* Estilos de las cards giratorias */
+    .cardFace{
+        position: absolute;
+        backface-visibility: hidden;
+        overflow: hidden;
+        transition: 1.5s;
+        width: 100%;
+        height: 100%;
+        @apply outline outline-gray-400 outline-1;
+    }
+    .frontFace{
+        transform: perspective(600px) rotateY(0deg);
+        background-color: rgba(232, 90, 232, .8);
+    }
+    .backFace{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .frontFlip{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .backFlip{
+        transform: perspective(600px) rotateY(360deg);
+    }
+    /* Estilos de las cards BuscaMinas */
+    .card1Mines{
+        @apply BoxPink;
+        width: calc(100%/5);
+        height: calc(100%/5);
+        margin: 1%;
+    }
+    .card2Mines{
+        @apply BoxPink;
+        width: calc(100%/6);
+        height: calc(100%/6);
+        margin: 0.5%;
+    }
+    .card3Mines{
+        @apply BoxPink;
+        width: calc(100%/7);
+        height: calc(100%/7);
+        margin: 0.5%;
+    }
+    /* Estilo para desactivar onClicks */
+    .notClick{
+        pointer-events: none;
+    }
+}
