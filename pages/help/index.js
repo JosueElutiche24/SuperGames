@@ -1,6 +1,6 @@
 import React from 'react'
 import BgParticulario from '../../components/bg_particulario'
-import Menu from '../../components/help/menu'
+import Menu from '../../components/HE_menu'
 
 export default function help() {
   return (

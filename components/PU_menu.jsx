@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-import PushInfo from './PushInfo';
+import PushInfo from './PU_pushinfo';
 
 export default function Menu() {
     const router = useRouter();

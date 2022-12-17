@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
-import MenuLevel from './menu_level';
-import MyLevel from './my_level';
+import MenuLevel from './ME_menu_level';
+import MyLevel from './ME_my_level';
 
 export default function MemoryIndex() {
     const router = useRouter();

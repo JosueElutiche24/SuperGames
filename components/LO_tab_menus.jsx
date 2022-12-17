@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 
-import { searchOneUser, searchAllUsers, postUser, authUser, guests } from '../../servicesClient/conectWhitApi'
-import { ContextofUser } from '../../context/user_context'
-import Modal from './modal'
+import { searchOneUser, searchAllUsers, postUser, authUser, guests } from '../servicesClient/conectWhitApi'
+import { ContextofUser } from '../context/user_context'
+import Modal from './LO_modal'
 
 export default function TabMenus() {
     const [btnDesactived, setBtnDesactived] = useState(false)

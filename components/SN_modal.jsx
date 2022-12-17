@@ -1,5 +1,5 @@
 import React from 'react'
-import { exportPuntaje } from '../../../servicesClient/conectWhitApi';
+import { exportPuntaje } from '../servicesClient/conectWhitApi';
 import { useState } from 'react';
 
 export default function Modal({desactive, mode, puntuacion, title}) {

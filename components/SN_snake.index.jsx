@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useRouter } from 'next/router'
-import MyLevel from './my_level';
+import MyLevel from './SN_my_level';
 
 export default function SnakeIndex() {
   const router = useRouter();

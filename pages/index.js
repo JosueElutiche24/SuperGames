@@ -1,7 +1,7 @@
 import React from 'react'
 
 import BgParticulario from '../components/bg_particulario';
-import Menu from '../components/home/menu';
+import Menu from '../components/HO_Menu';
 
 export default function Home() {
   return (

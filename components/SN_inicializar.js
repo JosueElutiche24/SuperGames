@@ -1,4 +1,4 @@
-import Game from "./index.js";
+import Game from "./SN_gamesnake_index.js";
 
 class InitGame{
     canvasContext;

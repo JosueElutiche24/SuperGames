@@ -1,8 +1,8 @@
 import React from 'react'
-import InitGame from './Game/inicializar.js'
+import InitGame from './SN_inicializar.js'
 import { useState, useEffect, useRef } from 'react'
-import { maxPuntaje } from '../../../servicesClient/conectWhitApi.js'
-import Modal from './Modal.jsx'
+import { maxPuntaje } from '../servicesClient/conectWhitApi.js'
+import Modal from './SN_modal.jsx'
 
 export default function MyLevel({acabar, btnStart, btnRestart}) {
   const [inputState, setInputState] = useState("")

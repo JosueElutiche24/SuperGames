@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { useRouter } from 'next/router'
-import MyLevel from './my_level';
-import MenuLevel from './menu_level';
-import mineArray from './create_array';
+import MyLevel from './SM_my_level';
+import MenuLevel from './SM_menu_level';
+import mineArray from './SM_create_array';
 
 export default function SearchMinesIndex() {
   const router = useRouter();

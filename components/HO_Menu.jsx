@@ -1,6 +1,6 @@
 import React from 'react'
 import {useRouter} from 'next/router'
-import { ContextofUser } from '../../context/user_context';
+import { ContextofUser } from '../context/user_context';
 import axios from 'axios'
 
 export default function Menu() {
@@ -10,22 +10,14 @@ export default function Menu() {
       // buttons of principals functions
     async function funLogout(){
       try {
-<<<<<<< HEAD
-        await axios.post("/api/authUser/Logout")
-=======
         await axios.post("/api/authUser/logout")
->>>>>>> 2ba788948b471f1f6967cac718538c3f8f906372
         router.push("/login");
       } catch (error) {
         router.push("/login");      
       }
     }
     function funcPuntuacion(){
-<<<<<<< HEAD
       router.push("/games/Puntuaciones")
-=======
-      router.push("/games/puntuaciones")
->>>>>>> 2ba788948b471f1f6967cac718538c3f8f906372
     }
     function fncHelp(){
         router.push("/help")
@@ -33,23 +25,13 @@ export default function Menu() {
 
       // buttons of secundary functions
     function goMemory(){
-<<<<<<< HEAD
       router.push("/games/Memory")
-    }
-    function goSearchmines(){
-      router.push("/games/SearchMines")
-    }
-    function goSnake(){
-      router.push("/games/Snake")
-=======
-      router.push("/games/memory")
     }
     function goSearchmines(){
       router.push("/games/search_mines")
     }
     function goSnake(){
-      router.push("/games/snake")
->>>>>>> 2ba788948b471f1f6967cac718538c3f8f906372
+      router.push("/games/Snake")
     }
 
   return (

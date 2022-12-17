@@ -1,5 +1,5 @@
 import BgParticulario from "../../components/bg_particulario"
-import TabMenus from "../../components/login/tab_menus"
+import TabMenus from "../../components/LO_tab_menus"
 import { useRouter } from "next/router"
 
 export default function Login() {

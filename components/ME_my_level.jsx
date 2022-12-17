@@ -1,8 +1,8 @@
 import React from 'react'
-import Card from "./Card"
-import Modal from './Modal';
+import Card from "./ME_card"
+import Modal from './ME_modal';
 import { useState, useEffect } from 'react';
-import { maxPuntaje } from '../../../servicesClient/conectWhitApi';
+import { maxPuntaje } from '../servicesClient/conectWhitApi';
 
 function ComprobarPar(val1, val2, Level){
     if(val1 + val2 == Level*8+1){
