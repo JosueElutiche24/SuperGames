@@ -58,7 +58,7 @@ export default function MyLevel({acabar, btnStart, btnRestart}) {
             </div>
         </div>
         <div id='MinesDiv' className='w-5/6 h-full margins flex items-center justify-center flex-wrap'>
-          <canvas ref={canvasRef} id='canvasSnake' width="375" height="375" className='margins bg-slate-600'/>
+          <canvas ref={canvasRef} id='canvasSnake' width="375" height="375" className='margins blackTrans margins'/>
           {modalActive !== null && <Modal desactive={()=>{
                 setModalActive(null)
               }}

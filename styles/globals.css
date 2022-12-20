@@ -12,9 +12,15 @@
     .modalWidht{
         width: 50vw;
     }
+    /* Estilos para el grid de rancking */
+    .ranckingCellHeight{
+        height: calc(100% /9);
+    }
+    .ranckingGridHeight{
+        height: calc((100% /9)*7);
+    }
     
     /* Estilos para colorear */
-    
     .blackTrans{
         @apply text-lg;
         background-color: rgba(0, 0, 0, .6);

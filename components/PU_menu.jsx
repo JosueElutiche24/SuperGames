@@ -31,8 +31,8 @@ export default function Menu() {
             </div>
         </div>
         <div className='w-full h-5/6'>
-            <div className={handleTab1 == 1? 'w-full' : "hidden"}>
-                <div className='flex w-full justify-between'>
+            <div className={handleTab1 == 1? 'w-full h-full' : "hidden"}>
+                <div className='flex w-full justify-between h-1/6 py-3'>
                     <div className='w-1/4 flex justify-center'>
                         <button className='BoxRed h-full w-2/3' onClick={Return}>Regresar</button>
                     </div>
@@ -42,14 +42,14 @@ export default function Menu() {
                         <button className={'text-black font-semibold p-2 w-1/3 ' + (handleTab2_1 == 3? "bg-amber-500 ":"bg-amber-200")} onClick={()=>changeTab2_1(3)}>Snake</button>
                     </div>
                 </div>
-                <div className='w-full overflow-auto mt-2'>
-                    <div className={handleTab2_1 == 1? "bg-slate-500": "hidden"}><PushInfo ranking={"global"} modeGame={"Memory"}/></div>
-                    <div className={handleTab2_1 == 2? "bg-slate-500": "hidden"}><PushInfo ranking={"global"} modeGame={"Mines"}/></div>
-                    <div className={handleTab2_1 == 3? "bg-slate-500": "hidden"}><PushInfo ranking={"global"} modeGame={"Snake"}/></div>
+                <div className='w-full h-5/6 '>
+                    <div className={handleTab2_1 == 1? "w-full h-full": "hidden"}><PushInfo ranking={"global"} modeGame={"memory"}/></div>
+                    <div className={handleTab2_1 == 2? "w-full h-full": "hidden"}><PushInfo ranking={"global"} modeGame={"mines"}/></div>
+                    <div className={handleTab2_1 == 3? "w-full h-full": "hidden"}><PushInfo ranking={"global"} modeGame={"snake"}/></div>
                 </div>
             </div>
-            <div className={handleTab1 == 2? 'w-full' : "hidden"}>
-                <div className='flex w-full justify-between'>
+            <div className={handleTab1 == 2? 'w-full h-full' : "hidden"}>
+                <div className='flex w-full justify-between h-1/6 py-3'>
                     <div className='w-1/4 flex justify-center'>
                         <button className='BoxRed h-full w-2/3' onClick={Return}>Regresar</button>
                     </div>
@@ -59,10 +59,10 @@ export default function Menu() {
                         <button className={'text-black font-semibold p-2  w-1/3 ' + (handleTab2_2 == 3? "bg-amber-500 ":"bg-amber-200")} onClick={()=>changeTab2_2(3)}>Snake</button>
                     </div>
                 </div>
-                <div className='w-full overflow-auto mt-2'>
-                    <div className={handleTab2_2 == 1? "bg-slate-500": "hidden"}><PushInfo ranking={"Mensual"} modeGame={"Memory"}/></div>
-                    <div className={handleTab2_2 == 2? "bg-slate-500": "hidden"}><PushInfo ranking={"Mensual"} modeGame={"Mines"}/></div>
-                    <div className={handleTab2_2 == 3? "bg-slate-500": "hidden"}><PushInfo ranking={"Mensual"} modeGame={"Snake"}/></div>
+                <div className='w-full h-5/6'>
+                    <div className={handleTab2_2 == 1? "w-full h-full": "hidden"}><PushInfo ranking={"mensual"} modeGame={"memory"}/></div>
+                    <div className={handleTab2_2 == 2? "w-full h-full": "hidden"}><PushInfo ranking={"mensual"} modeGame={"mines"}/></div>
+                    <div className={handleTab2_2 == 3? "w-full h-full": "hidden"}><PushInfo ranking={"mensual"} modeGame={"snake"}/></div>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ class Game{
     director = null; // marca el timing
     direction = 2; // direccion en que se mueve la anacondda
     sizeSquare = 15; // tamaño de nuestras cajas
-    interval = 250;
+    interval = 150;
     Over = false; // perdiste?
 
     constructor(canvasContext, ConectorInit){

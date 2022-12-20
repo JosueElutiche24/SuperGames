@@ -20,18 +20,18 @@ class endPoint{
         const {myTokenName} = thisReq.cookies
         const {exp, idUser, nameUser, email, password} =verify(myTokenName,process.env.SECRET)
         const {puntuacion, mode, level} = thisReq.body;
-        const date = Date.now();
+        const dateNow =new Date( Date.now());
+        const DateFormated = dateNow.getTime();
         // guardar valor de punteo
         switch (mode) {
             case "memory":
-                const response = await pool.query("Update memory_ranck Set puntos =?, date=?, level=? where userName = ?;", [puntuacion, date, level, nameUser])    
+                const response = await pool.query("Update memory_ranck Set puntos =?, date=?, level=? where userName = ?;", [puntuacion, DateFormated, level, nameUser])    
                 return {status:200, message: "hemos actualizado el registro"}
             case "mines":
-                const response1 = await pool.query("Update mine_ranck Set puntos =?, date=?, level=? where userName = ?;", [puntuacion, date, level, nameUser])    
+                const response1 = await pool.query("Update mine_ranck Set puntos =?, date=?, level=? where userName = ?;", [puntuacion, DateFormated, level, nameUser])    
                 return {status:200, message: "hemos actualizado el registro"}
             case "snake":
-                const response2 = await pool.query("Update snake_ranck Set puntos =?, date=? where userName = ?;", [puntuacion, date, nameUser])    
-                console.log(response2, " respuesta snake")
+                const response2 = await pool.query("Update snake_ranck Set puntos =?, date=? where userName = ?;", [puntuacion, DateFormated, nameUser])    
                 return {status:200, message: "hemos actualizado el registro"}
         
             default:
@@ -48,6 +48,7 @@ class endPoint{
         }
     }
     static serverError(error){
+        console.log(error, " en el savepuntaje");
         let res = {status: 500, message:"ha ocurrido un error inesperado, asegurese de tener coneccion a interet."};
         return res;
     }

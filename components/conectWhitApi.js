@@ -62,3 +62,12 @@ export async function exportPuntaje(mode, puntuacion, level){
         return false
     }
 }
+
+export async function showRanking(ranking, mode){
+    try {
+        const resp = await axios.post("/api/puntaje/showRanking", {ranking, mode});
+        return resp;
+    } catch (error) {
+        return false;
+    }
+}
