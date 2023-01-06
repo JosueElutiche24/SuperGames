@@ -5,6 +5,11 @@ import { searchOneUser, searchAllUsers, postUser, authUser, guests } from './con
 import { ContextofUser } from '../context/user_context'
 import Modal from './LO_modal'
 
+function validation(){
+
+}
+
+
 export default function TabMenus() {
     const [btnDesactived, setBtnDesactived] = useState(false)
     const [myModal, setMyModal] = useState(null)
@@ -25,8 +30,8 @@ export default function TabMenus() {
     async function sendSubmit(event){
         event.preventDefault();
         setBtnDesactived(true)
-        let userName = event.target[0].value;
-        let password = event.target[1].value;
+        let userName = event.target[0].value.toLowerCase().trim();
+        let password = event.target[1].value.toLowerCase().trim();
         if(userName == "" || password == ""){
             setMyModal({title:"Datos incompletos",text:"Necesitamos que ingrese todos los datos que se le solicitan",mode:"error"})
             return
@@ -46,9 +51,19 @@ export default function TabMenus() {
     async function registerSubmit(event){
         event.preventDefault();
         setBtnDesactived(true)
-        let userName = event.target[0].value;
-        let email = event.target[1].value;
-        let password = event.target[2].value;
+        let userName = event.target[0].value.toLowerCase().trim();
+        let email = event.target[1].value.toLowerCase().trim();
+        let password = event.target[2].value.toLowerCase().trim();
+
+        if(userName == "" || password == "" || email == ""){
+            setMyModal({title:"Datos incompletos",text:"Necesitamos que ingrese todos los datos que se le solicitan",mode:"error"})
+            return
+        }
+        const expEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+        if(!expEmail.test(email)){
+            setMyModal({title:"Datos incorrectos",text:"El formato del correo ingresado es incorrecto",mode:"error"})
+            return
+        }
 
         // verificar si no es un nombre de ususario repetido
         const queryuser = await searchOneUser(userName);
