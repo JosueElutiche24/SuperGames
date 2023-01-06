@@ -9,6 +9,7 @@ No disponible aun.
 ## Tecnologías utilizadas
 
 En el desarrollo de este proyecto se utilizaron las siguientes tecnologías:
+
 - Node Js : https://nodejs.org/en/
 - Next Js : https://nextjs.org/
 - React : https://es.reactjs.org/
