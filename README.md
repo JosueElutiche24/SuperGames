@@ -27,7 +27,7 @@ Aqui una pequeña guía de como instalar en su computador:
 - npm install
 - npm run build
 - npm start
-- habra su navegador en http//:localhost:3000
+- abra su navegador en http//:localhost:3000
 
 ## Estado del proyecto
 
