@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sobre este proyecto
 
-## Getting Started
+Aplicación web en la que registras tu usuario para poder competir en los juegos : BuscaMinas, Memoria y Snake.
+Intenta conseguir los mejores puntajes para aparecer en la zona de ranking.
 
-First, run the development server:
+# Screenshot
+No disponible aun.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Tecnologías utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+En el desarrollo de este proyecto se utilizaron las siguientes tecnologías:
+- Node Js : https://nodejs.org/en/
+- Next Js : https://nextjs.org/
+- React : https://es.reactjs.org/
+- Tailwind : https://tailwindcss.com/
+- TsParticles : https://particles.js.org/
+- MySql2 : https://www.npmjs.com/package/mysql2
+- PlanetScale : https://planetscale.com/
+- Vercel: https://vercel.com/dashboard
+- JsonWebToken : https://www.npmjs.com/package/jsonwebtoken
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Guía de instalacion
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Aqui una pequeña guía de como instalar en su computador:
+- git clone 
+- ubique su terminal dentro de la carpeta clonada
+- npm install
+- npm run build
+- npm start
+- abra su navegador en http//:localhost:3000
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Estado del proyecto
 
-## Learn More
+Los ultimos cambios necesarios para completar el proyecto son: la redacción del contenido, la sección de informacion y la validacion del formulario de registro.
+Actualmente estoy desarrollando un backend para sustituir al que ya tiene este proyecto integrado con NextJs.
 
-To learn more about Next.js, take a look at the following resources:
+### Derechos de autor
+Usted es libre de utilizar este codigo para lo que desee, siempre que no haga uso de mis datos personales.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### __
+Si usted esta interesado en comunicarse con migo , no dude en contactarme.
