@@ -15,8 +15,8 @@ class mineArray{
     }
     // Methods
     mostrar(){
-        console.log(this.mapArray)
-        console.log(mineArray.Booms)
+        // console.log(this.mapArray)
+        // console.log(mineArray.Booms)
     }
     static generarBooms(Level){
         let cant;
@@ -141,7 +141,7 @@ class mineArray{
                                     }
                                     break;
                                 default:
-                                    console.log("default")
+                                    
                                     break;
                             }
                         }

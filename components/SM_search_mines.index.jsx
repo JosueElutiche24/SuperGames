@@ -34,7 +34,7 @@ export default function SearchMinesIndex() {
                 <button className='margins h-full w-full BoxOpaque hover:BoxRed' onClick={Return}>Abandonar</button>
             </div>
             <div className='w-2/4 h-full flex justify-center items-center'>
-                <p>Reiniciar</p>
+                <p>Busca Minas Nivel : {Level}</p>
             </div>
             <div className='w-1/4 h-full flex justify-center  items-center'>
                 <button onClick={funcPuntuacion} className='margins h-full w-full BoxOpaque hover:BoxYellow'>Marcadores</button>

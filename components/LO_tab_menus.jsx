@@ -101,11 +101,11 @@ export default function TabMenus() {
                     <form className='w-full' onSubmit={sendSubmit}>
                         <p className='py-3 m-2 text-center'>Iniciar Secion</p>
                         <div className='flex flex-col w-4/5 p-2 mx-auto'>
-                            <label className='mr-3'>Name :</label>
+                            <label className='mr-3'>Apodo :</label>
                             <input className='text-stone-900' type="text"/>
                         </div>
                         <div className='flex flex-col w-4/5 p-2 mx-auto'>
-                            <label className="mr-3">password :</label>
+                            <label className="mr-3">Contraseña :</label>
                             <input className='text-stone-900' type="text"/>
                         </div>
                         <div className='w-full flex justify-center'>
@@ -117,15 +117,15 @@ export default function TabMenus() {
                     <form className='w-full' onSubmit={registerSubmit}>
                         <p className='py-1 m-2 text-center'>Registrarse</p>
                         <div className='flex flex-col w-4/5 px-2 mx-auto'>
-                            <label className='mr-3'>Name :</label>
+                            <label className='mr-3'>Apodo :</label>
                             <input className='text-stone-900' type="text"/>
                         </div>
                         <div className='flex flex-col w-4/5 px-2 mx-auto'>
-                            <label className="mr-3">email : </label>
+                            <label className="mr-3">Correo : </label>
                             <input className='text-stone-900' type="text"/>
                         </div>
                         <div className='flex flex-col w-4/5 px-2 mx-auto'>
-                            <label className="mr-3">password :</label>
+                            <label className="mr-3">Contraseña :</label>
                             <input className='text-stone-900' type="text"/>
                         </div>
                         <div className='flex w-full justify-center'>

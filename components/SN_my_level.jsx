@@ -14,7 +14,6 @@ export default function MyLevel({acabar, btnStart, btnRestart}) {
   
     useEffect(() => {
       if(btnStart == true){
-        console.log(btnStart)
         const canvas = canvasRef.current;
         const context = canvas.getContext("2d");
         const gameInitialized = new InitGame(ConectorApp, context);
@@ -31,7 +30,6 @@ export default function MyLevel({acabar, btnStart, btnRestart}) {
         setInputState(text)
       }
       if(action == "eat"){
-        console.log("colocando puntos ="+text)
         setInputPoints(text)
       }
       if(action == "over"){

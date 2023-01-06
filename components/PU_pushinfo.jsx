@@ -35,7 +35,7 @@ export default function PushInfo({ranking, modeGame}) {
   return (
     <div className='mirenme relative w-full h-full'>
     <div className={ 'w-full ranckingCellHeight flex justify-between bg-amber-800 p-2 margins outline-black font-semibold sticky top-0'}>
-        <div className='w-1/6 text-center'><p>userName</p></div>
+        <div className='w-1/6 text-center'><p>Apodo</p></div>
         <div className='w-1/6 text-center'><p>Puntos</p></div>
         <div className='w-1/6 text-center'><p>Fecha</p></div>
         <div className='w-1/6 text-center'><p>Nivel</p></div>

@@ -48,7 +48,6 @@ class endPoint{
         }
     }
     static serverError(error){
-        console.log(error, " en el savepuntaje");
         let res = {status: 500, message:"ha ocurrido un error inesperado, asegurese de tener coneccion a interet."};
         return res;
     }

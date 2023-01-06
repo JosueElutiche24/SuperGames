@@ -48,7 +48,6 @@ export async function maxPuntaje(puntuacion, mode, level){
         // resp = status, data
         return resp.data
     } catch (error) {
-        console.log(error)
         return false;        
     }
 
