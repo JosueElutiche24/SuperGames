@@ -32,7 +32,7 @@ Aqui una pequeña guía de como instalar en su computador:
 
 ## Estado del proyecto
 
-Los ultimos cambios necesarios para completar el proyecto son: la redacción del contenido, la sección de informacion y la validacion del formulario de registro.
+Este proyecto esta completamente terminad, usted puede visitar el sitio aquí:  https://super-games.vercel.app/login
 Actualmente estoy desarrollando un backend para sustituir al que ya tiene este proyecto integrado con NextJs.
 
 ### Derechos de autor

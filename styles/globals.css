@@ -19,6 +19,11 @@
     .ranckingGridHeight{
         height: calc((100% /9)*7);
     }
+    .shadowInside{
+        -webkit-box-shadow: inset 0px 0px 47px 12px rgba(0,0,0,0.52);
+        -moz-box-shadow: inset 0px 0px 47px 12px rgba(0,0,0,0.52);
+        box-shadow: inset 0px 0px 47px 12px rgba(0,0,0,0.52);
+    }
     
     /* Estilos para colorear */
     .blackTrans{
