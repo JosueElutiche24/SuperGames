@@ -61,7 +61,8 @@ export default function Menu() {
                 <div className={handleTab == 2? "shadowInside w-full h-full p-2 overflow-auto": "hidden"}>
                     <p className='text-center font-semibold text-3xl'>Soporte</p>
                     <div className='margins outline-black rounded-sm my-2 mx-12 p-5 px-10 mb-14'>
-                        <p>En estos momentos la unica manera de ayudarte que te ofrezco es que me contactes por medio de mi correo electronico y me comentes en que puedo ayudarte.</p>
+                        <p>En este momento la unica manera de ayudarte que te ofrezco es que me contactes por medio de mi correo electronico y me comentes en que puedo ayudarte.</p>
+                        <p>Si has descubierto un error o algo parecido, te agradecería que me lo notificaras.</p>
                         <p> - JosueG.guzman24@gmail.com</p>
                     </div>
                 </div>
