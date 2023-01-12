@@ -8,7 +8,7 @@ export default function SnakeIndex() {
     router.push("/")
 }
 function funcPuntuacion(){
-  router.push("/Games/Puntuaciones")
+  router.push("/games/Puntuaciones")
 }
 
 const [start, setStart] = useState(null)

@@ -11,7 +11,7 @@ export default function MemoryIndex() {
         router.push("/")
     }
     function funcPuntuacion(){
-        router.push("/Games/Puntuaciones")
+        router.push("/games/Puntuaciones")
       }
     function selectLevel(value){
         setLevel(value)

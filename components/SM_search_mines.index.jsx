@@ -25,7 +25,7 @@ export default function SearchMinesIndex() {
     router.push("/")
   }
   function funcPuntuacion(){
-    router.push("/Games/Puntuaciones")
+    router.push("/games/Puntuaciones")
   }
   return (
     <section className='text-white w-5/6 h-5/6 outline outline-2 outline-white'>
